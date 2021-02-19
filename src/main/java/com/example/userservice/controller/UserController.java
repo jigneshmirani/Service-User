@@ -44,6 +44,13 @@ public class UserController {
 	{
 		return userService.getUserWithDepartment(userId);
 	}
+	
+	@GetMapping("/getName/{name}")
+	public String getUserName(@PathVariable("name") String userName)
+	{
+		log.info("Show Name from controller");
+		return userName;
+	}
 
 }
 
