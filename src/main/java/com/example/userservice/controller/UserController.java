@@ -24,8 +24,14 @@ public class UserController {
 	
 	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(UserController.class);
 
-	
 	@PostMapping("/")
+	public String getSampleData()
+	{
+		log.info("Sample data method");
+		return "Hello World";
+	}
+	
+	@PostMapping("/saveData")
 	public User saveDepartment(@RequestBody User user)
 	{
 		log.info("Save User called from controller");
