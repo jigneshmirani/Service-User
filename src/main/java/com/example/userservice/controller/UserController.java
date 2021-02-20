@@ -52,6 +52,12 @@ public class UserController {
 		return userName;
 	}
 
+	@GetMapping("/getData/{name}")
+	public String getData(@PathVariable("name") String userName)
+	{
+		log.info("Show Name from controller");
+		return userName;
+	}
 }
 
 
