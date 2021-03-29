@@ -1,2 +1,0 @@
-@Library('MySharedLibrary') _
-jenkinsfile()
