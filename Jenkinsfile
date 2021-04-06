@@ -1,2 +1,3 @@
-@Library('MySharedLibrary') _
-jenkinsfile() 
+@Library('MySharedLibrary_test') _
+jenkinsfile()  
+
