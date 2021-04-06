@@ -28,7 +28,7 @@ public class UserController {
 	public String getSampleData()
 	{
 		log.info("Sample data method");
-		return "Welcome to jenkins world -- version 1.35"; 
+		return "Welcome to jenkins world -- version 1.36"; 
 	}
 	
 	@PostMapping("/saveData")
